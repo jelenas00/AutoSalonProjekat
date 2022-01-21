@@ -1,0 +1,211 @@
+@media screen and (min-width: 200px) {
+    body {
+      background-color: burlywood;
+    } 
+}
+  
+*{
+    box-sizing: border-box;
+}
+.selektMoto,.selektAuto{
+    display: flex;
+    flex:3;
+    border-radius: 4px;
+    border:1px border solid black;
+}
+.opcijaMoto,.opcijaAuta{
+    font-family: cursive;
+}
+.glavniKontejner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: burlywood;
+    justify-content: space-evenly;
+}
+
+.header{
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items:stretch;
+    flex:3;
+    background-color: rgb(184, 68, 93);
+}
+
+.bodySalon{
+    margin: 20px;
+    display: flex;
+    flex: 7;
+    flex: 10;
+    background-color: burlywood;
+}
+
+.logoIme{
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: bolder;
+}
+.headerButton{
+    margin: 2px;
+    border-radius: 12px;
+    height: 20px;
+    transition-duration: 0.4s;
+    background-color: cornsilk;
+    border:1px solid firebrick;
+    align-self:flex-end;
+    font-family: cursive;
+}
+
+.headerButton:hover{
+    background-color:rgb(170, 29, 60) ;
+}
+.klijentButtons{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+/*AutoPartneri i MotoPartneri*/
+.bodyZaCrtanjePartnera{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+.partnerideo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.dugmiciPartneri{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.dodajDugme{
+    flex:3;
+    margin: 10px;
+    font-family: cursive;
+    border: 1px solid black;
+    background-color: cornsilk;
+    border-radius: 4px;
+}
+
+/*Auto i Motor*/
+.bodyZaCrtanjeVozila{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.selektDiv{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}
+.dugmiciVozila{
+    margin-right: 10px;
+    flex:3;
+    font-family: cursive;
+    border-radius: 4px;
+    border: 1px solid black;
+}
+
+/*Tabela*/
+.divTabela{
+    display: flex;
+}
+table, th, tr, td
+{
+    border: 2px solid black;
+}
+table
+{
+    border-collapse: collapse;
+    width: 100%;
+}
+.bodyZaCrtanjeKlijenta{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+.formaKlijent{
+    display: flex;
+    flex-direction: column;
+}
+.dodajKlijenta{
+    flex: 1;
+    border: 2px solid black;
+    align-self: flex-start;
+    border-radius: 4px;
+    height: 30px;
+}
+.divSign{
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    margin: 10px;
+    justify-content:space-between ;
+    
+}
+.inputLabela{
+    margin-right: 10px;
+    font-family: cursive;
+}
+.inputEl{
+    border-radius: 4px;
+}
+
+.imePartnera, .godOsnivanjaPartnera,.sedisteFirme{
+    flex:2 1 20px;
+    border-bottom: 1px solid black;
+    font-family: cursive;
+}
+.godOsnivanjaPartnera,.sedisteFirme{
+    font-size: small;
+}
+
+/*KLIJENT DEO CSS*/
+.prikazKlijent{
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.bodyKlijenta{
+    display: flex;
+    flex: 1 2 100px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.prikazKlijentDugmici{
+    display: flex;
+    flex: 3;
+    flex-direction: row;
+}
+.klijentDugme{
+    height: 30px;
+    margin-right: 10px;
+    flex:1;
+    border:2px solid black;
+    border-radius: 6px;
+}
+.klijentDiv{
+    display: flex;
+    flex: 3 3 60px;
+    flex-direction: row;
+}
+.labeleKlijent{
+    display: flex;
+    flex: 3 1 30px;
+    border: 1px solid black;
+    font-family: cursive;
+    margin: 10px;
+}
+
+
