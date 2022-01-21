@@ -16,7 +16,6 @@ export class AutoSalon{
             }
             this.listaAutoPartnera=[];
             this.listaMotoPartnera=[];
-            this.listaKlijenata=[];
             this.container=null;
         }
 
@@ -262,6 +261,7 @@ export class AutoSalon{
         fetch("https://localhost:5001/MotoPartner/PrikaziPartnere",{method:"GET"})
         .then(response=>response.json())
         .then(motoPartner=>{
+            
             motoPartner.forEach(part=>{
                 let p= new MotoPartneri(part.id,part.ime,part.godinaOsnivanja,part.sedisteFirme);
                 this.dodajMotoPartnera(p);
@@ -602,7 +602,8 @@ export class AutoSalon{
           body: JSON.stringify(klijent)})
           .then(response => response.json())
             .then(data => {
-            console.log('Success:', data);
+                    console.log(data);
+                    alert("Klijent uspesno dodat!");
             });
         
     }
